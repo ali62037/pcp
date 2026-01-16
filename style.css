@@ -480,6 +480,7 @@ ul {
     color: var(--white);
     padding: var(--spacing-xxl) 0;
     text-align: center;
+   margin-top: 0.5rem;
 }
 
 .cta h2 {
@@ -2033,4 +2034,5 @@ ul {
     .contact-info li {
         justify-content: center;
     }
+
 }
