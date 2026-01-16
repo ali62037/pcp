@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gallery of PCP - Pie Classes Patna showcasing classrooms, toppers, students, and events at our Danapur center.">
+    <title>Gallery | PCP - Pie Classes Patna</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <h1>PCP</h1>
+                    <span>Pie Classes Patna</span>
+                </a>
+                
+                <div class="nav-menu" id="navMenu">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html" class="active">Gallery</a></li>
+                        <li><a href="admission.html">Admission</a></li>
+                        <li><a href="timetable.html">Time Table</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <a href="tel:+919693694853" class="btn btn-primary nav-cta">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                </div>
+                
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title animate-fade-up">Our Gallery</h1>
+            <p class="page-subtitle animate-fade-up" style="animation-delay: 0.1s;">Capturing Moments of Learning & Achievement</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="section">
+        <div class="container">
+            <div class="gallery-filter animate-fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="classrooms">Classrooms</button>
+                <button class="filter-btn" data-filter="toppers">Toppers</button>
+                <button class="filter-btn" data-filter="students">Students</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- Classrooms -->
+                <div class="gallery-item classrooms animate-fade-up" style="animation-delay: 0.1s;">
+                    <div class="gallery-img">
+                        <img src="images/classroom1.jpg" alt="PCP Classroom" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h3>Modern Classroom</h3>
+                                <p>Well-equipped classroom with digital learning aids</p>
+                            </div>
+                            <button class="gallery-view" onclick="openLightbox('images/classroom1.jpg', 'Modern Classroom')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item classrooms animate-fade-up" style="animation-delay: 0.2s;">
+                    <div class="gallery-img">
+                        <img src="images/classroom2.jpg" alt="PCP Classroom" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h3>Interactive Sessions</h3>
+                                <p>Students engaged in active learning</p>
+                            </div>
+                            <button class="gallery-view" onclick="openLightbox('images/classroom2.jpg', 'Interactive Sessions')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Toppers -->
+                <div class="gallery-item toppers animate-fade-up" style="animation-delay: 0.3s;">
+                    <div class="gallery-img">
+                        <img src="images/topper1.jpg" alt="Topper Student" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h3>Rohit Kumar</h3>
+                                <p>Class 10, 95.6% Score</p>
+                            </div>
+                            <button class="gallery-view" onclick="openLightbox('images/topper1.jpg', 'Rohit Kumar - Class 10 Topper')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item toppers animate-fade-up" style="animation-delay: 0.4s;">
+                    <div class="gallery-img">
+                        <img src="images/topper2.jpg" alt="Topper Student" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h3>Priya Singh</h3>
+                                <p>Class 9, 94.2% Score</p>
+                            </div>
+                            <button class="gallery-view" onclick="openLightbox('images/topper2.jpg', 'Priya Singh - Class 9 Topper')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item toppers animate-fade-up" style="animation-delay: 0.5s;">
+                    <div class="gallery-img">
+                        <img src="images/topper3.jpg" alt="Topper Student" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h3>Aryan Raj</h3>
+                                <p>Class 8, 96.8% Score</p>
+                            </div>
+                            <button class="gallery-view" onclick="openLightbox('images/topper3.jpg', 'Aryan Raj - Class 8 Topper')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Students -->
+                <div class="gallery-item students animate-fade-up" style="animation-delay: 0.6s;">
+                    <div class="gallery-img">
+                        <img src="images/student1.jpg" alt="PCP Students" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h3>Group Study</h3>
+                                <p>Collaborative learning sessions</p>
+                            </div>
+                            <button class="gallery-view" onclick="openLightbox('images/student1.jpg', 'Group Study Session')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item students animate-fade-up" style="animation-delay: 0.7s;">
+                    <div class="gallery-img">
+                        <img src="images/student2.jpg" alt="PCP Students" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h3>Practical Learning</h3>
+                                <p>Hands-on science experiments</p>
+                            </div>
+                            <button class="gallery-view" onclick="openLightbox('images/student2.jpg', 'Practical Learning')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Events -->
+                <div class="gallery-item events animate-fade-up" style="animation-delay: 0.8s;">
+                    <div class="gallery-img">
+                        <img src="images/event1.jpg" alt="PCP Event" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h3>Diwali Celebration</h3>
+                                <p>Happy Diwali 2024 celebration</p>
+                            </div>
+                            <button class="gallery-view" onclick="openLightbox('images/event1.jpg', 'Diwali Celebration 2024')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item events animate-fade-up" style="animation-delay: 0.9s;">
+                    <div class="gallery-img">
+                        <img src="images/event2.jpg" alt="PCP Event" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h3>Science Exhibition</h3>
+                                <p>Annual science fair and exhibition</p>
+                            </div>
+                            <button class="gallery-view" onclick="openLightbox('images/event2.jpg', 'Science Exhibition')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toppers Section -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header center animate-fade-up">
+                <h2>Our Toppers</h2>
+                <p>Students who achieved excellence with our guidance</p>
+            </div>
+            
+            <div class="toppers-grid">
+                <div class="topper-card-full animate-fade-up" style="animation-delay: 0.1s;">
+                    <div class="topper-img-full">
+                        <img src="images/topper1.jpg" alt="Topper Student" loading="lazy">
+                    </div>
+                    <div class="topper-info-full">
+                        <h3>Rohit Kumar</h3>
+                        <p class="topper-class">Class 10 (CBSE)</p>
+                        <p class="topper-score">95.6% Score</p>
+                        <p class="topper-desc">"PCP's focused teaching methodology and regular tests helped me understand concepts deeply and score excellent marks in board exams."</p>
+                    </div>
+                </div>
+                
+                <div class="topper-card-full animate-fade-up" style="animation-delay: 0.2s;">
+                    <div class="topper-img-full">
+                        <img src="images/topper2.jpg" alt="Topper Student" loading="lazy">
+                    </div>
+                    <div class="topper-info-full">
+                        <h3>Priya Singh</h3>
+                        <p class="topper-class">Class 9 (ICSE)</p>
+                        <p class="topper-score">94.2% Score</p>
+                        <p class="topper-desc">"The personalized attention from teachers and small batch size made learning effective. Regular doubt sessions were particularly helpful."</p>
+                    </div>
+                </div>
+                
+                <div class="topper-card-full animate-fade-up" style="animation-delay: 0.3s;">
+                    <div class="topper-img-full">
+                        <img src="images/topper3.jpg" alt="Topper Student" loading="lazy">
+                    </div>
+                    <div class="topper-info-full">
+                        <h3>Aryan Raj</h3>
+                        <p class="topper-class">Class 8 (CBSE)</p>
+                        <p class="topper-score">96.8% Score</p>
+                        <p class="topper-desc">"Mathematics was my weakest subject, but Prince Sir's teaching made it my strongest. The practical examples and regular practice tests were game-changers."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightboxClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <img src="" alt="" class="lightbox-img" id="lightboxImg">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo footer-logo">
+                        <h1>PCP</h1>
+                        <span>Pie Classes Patna</span>
+                    </a>
+                    <p class="footer-description">A better place for your child to study and grow. We provide guidance to students of classes 4-10 (CBSE/ICSE Curriculum).</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/919693694853" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="admission.html">Admission Process</a></li>
+                        <li><a href="timetable.html">Time Table</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Classes</h3>
+                    <ul>
+                        <li><a href="admission.html">Class 5-6</a></li>
+                        <li><a href="admission.html">Class 7-8</a></li>
+                        <li><a href="admission.html">Class 9 (CBSE/ICSE)</a></li>
+                        <li><a href="admission.html">Class 10 (CBSE/ICSE)</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Marshal Bazar, Danapur Cantt, Patna</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+919693694853">+91 96936 94853</a></li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat: 9:00 AM - 7:00 PM</li>
+                        <li><i class="fas fa-envelope"></i> info@pieclassespatna.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 PCP - Pie Classes Patna. All Rights Reserved.</p>
+                <p>Designed with <i class="fas fa-heart"></i> for quality education</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-btns">
+        <a href="tel:+919693694853" class="floating-btn call-btn" id="callBtn">
+            <i class="fas fa-phone"></i>
+            <span class="btn-tooltip">Call Now</span>
+        </a>
+        <a href="https://wa.me/919693694853" target="_blank" class="floating-btn whatsapp-btn" id="whatsappBtn">
+            <i class="fab fa-whatsapp"></i>
+            <span class="btn-tooltip">WhatsApp</span>
+        </a>
+    </div>
+    
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script>
+        // Gallery Filter Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'all' || item.classList.contains(filterValue)) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+        
+        // Lightbox Functions
+        function openLightbox(imgSrc, caption) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightboxImg');
+            const lightboxCaption = document.getElementById('lightboxCaption');
+            
+            lightboxImg.src = imgSrc;
+            lightboxCaption.textContent = caption;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        // Close lightbox when clicking the close button
+        document.getElementById('lightboxClose').addEventListener('click', function() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+        
+        // Close lightbox when clicking outside the image
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
+</body>
+</html>

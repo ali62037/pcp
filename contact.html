@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact PCP - Pie Classes Patna for admissions, inquiries, or visits. Find our location in Danapur Cantt, Patna with embedded Google Map.">
+    <title>Contact Us | PCP - Pie Classes Patna</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <h1>PCP</h1>
+                    <span>Pie Classes Patna</span>
+                </a>
+                
+                <div class="nav-menu" id="navMenu">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="admission.html">Admission</a></li>
+                        <li><a href="timetable.html">Time Table</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                    </ul>
+                    <a href="tel:+919693694853" class="btn btn-primary nav-cta">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                </div>
+                
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title animate-fade-up">Contact Us</h1>
+            <p class="page-subtitle animate-fade-up" style="animation-delay: 0.1s;">Get in touch with PCP - Pie Classes Patna</p>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-info-grid">
+                <div class="contact-info-card animate-fade-up" style="animation-delay: 0.1s;">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Our Location</h3>
+                    <p>Marshal Bazar, Danapur Cantt, Patna, Bihar 801503</p>
+                    <a href="#map" class="contact-link">View on Map <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="contact-info-card animate-fade-up" style="animation-delay: 0.2s;">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>+91 96936 94853</p>
+                    <a href="tel:+919693694853" class="contact-link">Call Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="contact-info-card animate-fade-up" style="animation-delay: 0.3s;">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>+91 96936 94853</p>
+                    <a href="https://wa.me/919693694853" target="_blank" class="contact-link">Message on WhatsApp <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="contact-info-card animate-fade-up" style="animation-delay: 0.4s;">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Working Hours</h3>
+                    <p>Monday - Saturday: 9:00 AM - 7:00 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="contact-form-map">
+                <div class="contact-form-container animate-fade-left">
+                    <h2>Send us a Message</h2>
+                    <p>Have questions about admissions, fees, or classes? Send us a message and we'll respond within 24 hours.</p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName">Your Name *</label>
+                                <input type="text" id="contactName" name="contactName" required>
+                                <div class="error-message" id="contactNameError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contactPhone">Phone Number *</label>
+                                <input type="tel" id="contactPhone" name="contactPhone" required>
+                                <div class="error-message" id="contactPhoneError"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address</label>
+                            <input type="email" id="contactEmail" name="contactEmail">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactSubject">Subject *</label>
+                            <select id="contactSubject" name="contactSubject" required>
+                                <option value="">Select Subject</option>
+                                <option value="Admission">Admission Inquiry</option>
+                                <option value="Fee">Fee Structure</option>
+                                <option value="Class">Class Schedule</option>
+                                <option value="Other">Other Inquiry</option>
+                            </select>
+                            <div class="error-message" id="contactSubjectError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactMessage">Your Message *</label>
+                            <textarea id="contactMessage" name="contactMessage" rows="5" required placeholder="Please provide details about your inquiry..."></textarea>
+                            <div class="error-message" id="contactMessageError"></div>
+                        </div>
+                        
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                            <p class="form-note">We'll contact you within 24 hours.</p>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="map-container animate-fade-right" id="map">
+                    <h2>Find Us on Google Maps</h2>
+                    <div class="map-embed">
+                        <!-- Embedded Google Map -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3598.141169389491!2d85.04420277599757!3d25.57116887743281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed5847c16f1dc7%3A0xc79eb69c39b4baf8!2sMarshal%20Bazar%2C%20Danapur%20Cantt%2C%20Patna%2C%20Bihar%20801503!5e0!3m2!1sen!2sin!4v1644567890123!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="400" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="PCP - Pie Classes Patna Location">
+                        </iframe>
+                    </div>
+                    <div class="map-address">
+                        <h4><i class="fas fa-map-marker-alt"></i> Address:</h4>
+                        <p>Marshal Bazar, Danapur Cantt, Patna, Bihar 801503</p>
+                        <p>Landmark: Near State Boring, Danapur Cantt</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header center animate-fade-up">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item animate-fade-up" style="animation-delay: 0.1s;">
+                    <div class="faq-question">
+                        <h3>What are your operating hours?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We are open Monday to Saturday from 9:00 AM to 7:00 PM. Sunday is a holiday. Classes are conducted in morning and evening batches as per the timetable.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-fade-up" style="animation-delay: 0.2s;">
+                    <div class="faq-question">
+                        <h3>Do you offer free demo classes?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer 7 days of free demo classes for all new students. This allows you to experience our teaching methodology before making any commitment.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-fade-up" style="animation-delay: 0.3s;">
+                    <div class="faq-question">
+                        <h3>What is your fee structure?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our fees range from ₹1,800/month for classes 5-6 to ₹3,200/month for class 10. We offer discounts for siblings, early bird admissions, and merit scholarships. Flexible installment options are also available.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-fade-up" style="animation-delay: 0.4s;">
+                    <div class="faq-question">
+                        <h3>What curriculum do you follow?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We follow both CBSE and ICSE curriculum for classes 4-10. Our teaching methodology is tailored to meet the requirements of both boards.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-fade-up" style="animation-delay: 0.5s;">
+                    <div class="faq-question">
+                        <h3>How can I schedule a visit to the institute?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can visit our institute during operating hours without any appointment. For a guided tour and meeting with faculty, we recommend calling us at +91 96936 94853 to schedule a visit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo footer-logo">
+                        <h1>PCP</h1>
+                        <span>Pie Classes Patna</span>
+                    </a>
+                    <p class="footer-description">A better place for your child to study and grow. We provide guidance to students of classes 4-10 (CBSE/ICSE Curriculum).</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/919693694853" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="admission.html">Admission Process</a></li>
+                        <li><a href="timetable.html">Time Table</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Classes</h3>
+                    <ul>
+                        <li><a href="admission.html">Class 5-6</a></li>
+                        <li><a href="admission.html">Class 7-8</a></li>
+                        <li><a href="admission.html">Class 9 (CBSE/ICSE)</a></li>
+                        <li><a href="admission.html">Class 10 (CBSE/ICSE)</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Marshal Bazar, Danapur Cantt, Patna</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+919693694853">+91 96936 94853</a></li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat: 9:00 AM - 7:00 PM</li>
+                        <li><i class="fas fa-envelope"></i> info@pieclassespatna.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 PCP - Pie Classes Patna. All Rights Reserved.</p>
+                <p>Designed with <i class="fas fa-heart"></i> for quality education</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-btns">
+        <a href="tel:+919693694853" class="floating-btn call-btn" id="callBtn">
+            <i class="fas fa-phone"></i>
+            <span class="btn-tooltip">Call Now</span>
+        </a>
+        <a href="https://wa.me/919693694853" target="_blank" class="floating-btn whatsapp-btn" id="whatsappBtn">
+            <i class="fab fa-whatsapp"></i>
+            <span class="btn-tooltip">WhatsApp</span>
+        </a>
+    </div>
+    
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script>
+        // FAQ Toggle Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const toggle = this.querySelector('.faq-toggle');
+                    
+                    // Toggle active class on FAQ item
+                    this.parentElement.classList.toggle('active');
+                    
+                    // Toggle answer visibility
+                    if (answer.style.maxHeight) {
+                        answer.style.maxHeight = null;
+                        toggle.textContent = '+';
+                    } else {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        toggle.textContent = '-';
+                    }
+                });
+            });
+            
+            // Contact Form Validation
+            document.getElementById('contactForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                let isValid = true;
+                
+                // Reset error messages
+                document.querySelectorAll('.error-message').forEach(el => el.textContent = '');
+                
+                // Validate name
+                const contactName = document.getElementById('contactName').value.trim();
+                if (!contactName) {
+                    document.getElementById('contactNameError').textContent = 'Name is required';
+                    isValid = false;
+                }
+                
+                // Validate phone number
+                const contactPhone = document.getElementById('contactPhone').value.trim();
+                const phoneRegex = /^[0-9]{10}$/;
+                if (!contactPhone) {
+                    document.getElementById('contactPhoneError').textContent = 'Phone number is required';
+                    isValid = false;
+                } else if (!phoneRegex.test(contactPhone)) {
+                    document.getElementById('contactPhoneError').textContent = 'Please enter a valid 10-digit phone number';
+                    isValid = false;
+                }
+                
+                // Validate subject selection
+                const contactSubject = document.getElementById('contactSubject').value;
+                if (!contactSubject) {
+                    document.getElementById('contactSubjectError').textContent = 'Please select a subject';
+                    isValid = false;
+                }
+                
+                // Validate message
+                const contactMessage = document.getElementById('contactMessage').value.trim();
+                if (!contactMessage) {
+                    document.getElementById('contactMessageError').textContent = 'Message is required';
+                    isValid = false;
+                }
+                
+                if (isValid) {
+                    // Show success message
+                    alert('Thank you for your message! We will contact you within 24 hours.');
+                    document.getElementById('contactForm').reset();
+                    
+                    // In a real application, you would send the form data to a server here
+                    // Example: fetch('/submit-contact', { method: 'POST', body: new FormData(this) });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
